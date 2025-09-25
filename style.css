@@ -1,0 +1,105 @@
+* {  
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    color: white;
+
+}
+
+p {
+    color: white;
+}
+
+body {
+    /* --Ordem de background: color, image, repeat, position, size (preicsa do /)  */
+    background: url(Assets/bg-mobile.jpg) no-repeat top center/cover;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 56px;
+    padding: 0 24px;  
+}
+
+#profile {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+#profile img{
+    width: 112px;
+}
+
+#profile p {
+    font-weight: 500;
+    line-height: 24px;
+    margin: 10px 0px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 60vw;
+    
+}
+
+ul li a {
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 16px 24px;
+
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+
+    backdrop-filter: blur(4px);
+
+    text-decoration: none;
+    font-weight: 500;
+
+    transition: background .2s;
+}
+
+ul li a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid white;
+}
+
+#social_links {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+
+    margin-top: 20px;
+
+    
+}
+
+#social_links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    
+    transition: linear .1s;
+    border-radius: 50%;
+}
+
+#social_links a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+}
+
