@@ -96,6 +96,11 @@ body {
 
 }
 
+.light #switch button {
+    right: 0;
+    
+}
+
 ul {
     list-style: none;
     display: flex;
