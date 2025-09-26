@@ -13,6 +13,7 @@
     --surface-color: rgba(255, 255, 255, 0.5);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
     --highlight-color: rgba(255, 255, 255, 0.1);
+    --switch-bg: url(./Assets/MoonStars.svg);
 }
 
 .light {
@@ -22,7 +23,9 @@
     --surface-color: rgba(0, 0, 0, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.01);
     --highlight-color: rgba(0, 0, 0, 0.1);
+    --switch-bg: url(./Assets/Sun.svg);
 }
+
 
 
 
@@ -58,6 +61,39 @@ body {
     font-weight: 500;
     line-height: 24px;
     margin: 10px 0px;
+}
+
+#switch {
+    
+    position: relative;
+
+    margin-bottom: 2vh;
+}
+
+#switch button {
+    width: 32px;
+    height: 32px;
+    background: white var(--switch-bg) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+    
+    /* Position: ideias de alinhas */
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#switch span {
+    display: block;
+    width: 64px;
+    height: 24px;
+
+    background: var(--surface-color);
+    border: var(--stroke-color);
+    backdrop-filter: blur(4px);
+    border-radius: 9999px;
+
 }
 
 ul {
