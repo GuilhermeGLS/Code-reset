@@ -39,6 +39,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     margin-top: 56px;
     padding: 0 24px;  
 }
@@ -107,7 +108,7 @@ ul {
     flex-direction: column;
     gap: 16px;
     width: 60vw;
-    
+    max-width: 588px;
 }
 
 ul li a {
